@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pick a Task for Me!</title>
+    </head>
+    <body>
+        <h1>Pick a Task for Me!</h1>
+        <div class="formArea taskList">
+            <h2>enter the tasks you have to do</h2>
+            <form id="addToDo">
+                <textarea autofocus id="userTask" id="userTask" name="userTask" rows="1" cols="50"></textarea>
+                <br>
+                <button onclick="addToToDoList()" type="button" form="addToDo">Add to To Do List</button>
+            </form>
+            <div class="taskBox" id="taskBox">
+                <h3>To Do List</h3>
+                <ol id="toDoList">
+
+                </ol>
+            </div>
+        </div>
+        <div class="formArea taskNum">
+            <h2>or pick how many tasks you have</h2>
+            <form>
+                <label for="numTasks">Number of Tasks</label>
+                <input id="numTasksInput" name="numTasks" type="number" min="1" max="50" value="1" step="1">
+            </form>
+        </div>
+        
+        <div>
+            <button onclick="getRandomTask()">Give me a Task!</button>
+            <h2>Your Task is:</h2>
+            <h3 id="selectedTask"></h3>
+            <br>
+            <button onclick="resetThePage()">Reset</button>
+        </div>
+
+        <script src="scripts.js"> </script>
+    </body>
+</html>
