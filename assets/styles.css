@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #298262;
+    background-image: url("5-dots.png");
+}
+
+h1{
+    width: fit-content;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 600;
+    color: #fefefe;
+}
+
+/*
+    color: #1f2e3d;
+*/
+
+h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #dfdfdf;
+    border-bottom: 3px solid #dfdfdf;
+    margin: 10px 0;
+}
+
+h3{
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#toDoList{
+    background-color: rgba(142, 171, 160, 0.65);
+    min-height: 5em;
+    max-height: 10em;;
+    border-radius: 7px;
+    padding: 7px 10px;
+    overflow-y: scroll;
+    overflow-x: wrap;
+}
+
+li{
+    padding: 2px 0;
+    margin-bottom: 7px 0;
+    color: #dfdfdf;
+}
+
+div{
+    margin: 30px 0;
+}
+
+label{
+    color:#dfdfdf;
+    font-size: 1.25em;
+    margin: 0 100px 0 0;
+}
+
+.container{
+    width: fit-content;
+    margin: 20px auto;
+}
+
+#orPara{
+    width: fit-content;
+    margin: 50px auto;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fefefe;
+}
+
+.formArea form {
+    margin: 10px 0px;
+    background-color: rgba(142, 171, 160, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button{
+    color:white;
+    background-color: #298262;
+    width:fit-content;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 0 solid #298262;
+    border-radius: 7px;
+    margin: 20px auto;
+}
+
+button:hover{
+    background-color: #62B998;
+}
+
+button:active{
+    background-color: #24e49a;
+    color: #0d0d0d;
+}

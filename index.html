@@ -2,37 +2,44 @@
 <html>
     <head>
         <title>Pick a Task for Me!</title>
+        <link href="assets/css_reset.css" rel="stylesheet">
+        <link href="assets/styles.css" rel="stylesheet">
     </head>
     <body>
         <h1>Pick a Task for Me!</h1>
-        <div class="formArea taskList">
-            <h2>enter the tasks you have to do</h2>
-            <form id="addToDo">
-                <textarea autofocus id="userTask" id="userTask" name="userTask" rows="1" cols="50"></textarea>
-                <br>
-                <button onclick="addToToDoList()" type="button" form="addToDo">Add to To Do List</button>
-            </form>
-            <div class="taskBox" id="taskBox">
-                <h3>To Do List</h3>
-                <ol id="toDoList">
+        <div class="container">
+            <div class="formArea taskList">
+                <h2>Enter the tasks you have to do</h2>
+                <form id="addToDo">
+                    <textarea autofocus id="userTask" id="userTask" name="userTask" rows="1" cols="50"></textarea>
+                    <br>
+                    <button onclick="addToToDoList()" type="button" form="addToDo">Add to To Do List</button>
+                </form>
+                <div class="taskBox" id="taskBox">
+                    <h3>To Do List</h3>
+                    <ol id="toDoList">
 
-                </ol>
+                    </ol>
+                </div>
             </div>
-        </div>
-        <div class="formArea taskNum">
-            <h2>or pick how many tasks you have</h2>
-            <form>
-                <label for="numTasks">Number of Tasks</label>
-                <input id="numTasksInput" name="numTasks" type="number" min="1" max="50" value="1" step="1">
-            </form>
-        </div>
-        
-        <div>
-            <button onclick="getRandomTask()">Give me a Task!</button>
-            <h2>Your Task is:</h2>
-            <h3 id="selectedTask"></h3>
-            <br>
-            <button onclick="resetThePage()">Reset</button>
+
+            <p id="orPara">OR</p>
+
+            <div class="formArea taskNum"> 
+                <h2>Pick how many tasks you have</h2>
+                <form>
+                    <label for="numTasks">Number of Tasks</label>
+                    <input id="numTasksInput" name="numTasks" type="number" min="1" max="50" value="1" step="1">
+                </form>
+            </div>
+            
+            <div class="formArea buttonArea">
+                <button onclick="getRandomTask()">Give me a Task!</button>
+                <h2>Your Task is:</h2>
+                <h3 id="selectedTask"></h3>
+                <br>
+                <button onclick="resetThePage()">Reset</button>
+            </div>
         </div>
 
         <script src="scripts.js"> </script>
